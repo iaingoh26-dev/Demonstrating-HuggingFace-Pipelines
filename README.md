@@ -18,7 +18,7 @@ You will also need:
 
 ---
 
-## 🔑 Setup
+##  Setup
 
 ### 1. Check your GPU
 ```python
@@ -34,7 +34,7 @@ from google.colab import userdata
 hf_token = userdata.get('HF_TOKEN')
 login(hf_token, add_to_git_credential=True)
 ```
-> 💡 Add your HuggingFace token in the Colab left sidebar under the 🔑 key icon
+>  Add your HuggingFace token in the Colab left sidebar under the 🔑 key icon
 
 ### 3. Import everything
 ```python
@@ -85,7 +85,7 @@ print(result)
 
 ---
 
-## 🏷️ 2. Named Entity Recognition (NER)
+##  2. Named Entity Recognition (NER)
 > **What it does:** Finds names of people, places, and organisations in text
 
 ```python
@@ -99,7 +99,7 @@ for entity in result:
 
 ---
 
-## ❓ 3. Question Answering
+##  3. Question Answering
 > **What it does:** Reads a piece of text and answers questions about it
 
 ```python
@@ -111,11 +111,11 @@ result = qa(question=question, context=context)
 print(result)
 # Output: {'answer': 'a high level API for inference of LLMs'}
 ```
-> 💡 The AI can only answer using the context you give it — like an open-book exam!
+>  The AI can only answer using the context you give it 
 
 ---
 
-## 📝 4. Text Summarization
+##  4. Text Summarization
 > **What it does:** Takes a long piece of text and makes it shorter
 
 ```python
@@ -161,12 +161,12 @@ translator = pipeline(
 result = translator("The Data Scientists were amazed by the HuggingFace pipeline API.")
 print(result[0]['translation_text'])
 ```
-> 💡 Find all translation models here:
+>  Find all translation models here:
 > https://huggingface.co/models?pipeline_tag=translation&sort=trending
 
 ---
 
-## 🗂️ 6. Zero-Shot Classification
+##  6. Zero-Shot Classification
 > **What it does:** Sorts text into categories — even ones it has never seen before!
 
 ```python
@@ -179,11 +179,11 @@ result = classifier(
 print(result)
 # Output: technology wins with high confidence ✅
 ```
-> 💡 You give it the labels — it figures out which one fits best
+>  You give it the labels it figures out which one fits best
 
 ---
 
-## ✍️ 7. Text Generation
+##  7. Text Generation
 > **What it does:** Continues writing from where you leave off
 
 ```python
